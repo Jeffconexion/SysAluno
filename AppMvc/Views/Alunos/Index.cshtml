@@ -1,0 +1,85 @@
+﻿@model IEnumerable<AppMvc.Models.Aluno>
+
+@{
+    ViewBag.Title = "Gestão de Alunos";
+}
+
+<br />
+@if (TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success">
+        <button type="button" class="close" data-dismiss="alert">x</button>
+        <h3><strong>@TempData["Mensagem"].ToString()</strong></h3>
+    </div>
+}
+
+
+
+<h2>Gestão de Aluno</h2>
+@*Botão com a minha imagem específica.*@
+<!--<div>
+    <a href="@Url.Action("Create", "Alunos")">
+        <div class="meu-botao">
+            <img src="@Url.Content("~/fonts/Imagens/user.png")" height="3%" width="3%" />-->
+@*Um texto dentro do botão*@
+<!--</div>
+    </a>
+</div>-->
+
+
+<div>
+    <a href="@Url.Action("Create","Alunos")" class="btn btn-primary">Novo Aluno</a>
+
+</div>
+<br />
+<br />
+
+<table class="table table-hover table-responsive ">
+    <tr>
+        <th class="col-md-2">
+            @Html.DisplayNameFor(model => model.NomeCompleto)
+        </th>
+        <th class="col-md-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th class="col-md-2">
+            @Html.DisplayNameFor(model => model.CPF)
+        </th>
+        <th class="col-md-2">
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th class="col-md-1">
+            @Html.DisplayNameFor(model => model.Ativo)
+        </th>
+        <th class="col-md-3"></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeCompleto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ativo)
+            </td>
+            <td>
+                <a href="@Url.Action("Edit", "Alunos", new { id = item.Id })" class="btn btn-warning">Editar</a>
+                <a href="@Url.Action("Details", "Alunos", new { id = item.Id })" class="btn btn-info">Detalhes</a>
+                <a href="@Url.Action("Delete", "Alunos", new { id = item.Id })" class="btn btn-danger">Deletar</a>
+
+
+            </td>
+        </tr>
+    }
+
+</table>
