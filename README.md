@@ -24,6 +24,6 @@ a persistência dos dados é realizado no SQL Server, podendo adicionar, editar,
 </p> 
 
 
-![Sistema SysAluno](https://github.com/Jeffconexion/SysAluno/blob/main/1.PNG)
+![Sistema SysAluno](https://github.com/Jeffconexion/SysAluno/blob/main/giphy.gif)
 
 
