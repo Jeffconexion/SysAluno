@@ -23,7 +23,6 @@ Mediante o conhecimento adquirido, foi desenvolvido o SysAluno. O sistema dispõ
 a persistência dos dados é realizado no SQL Server, podendo adicionar, editar, delhates e deletar aluno.
 </p> 
 
-![Sistema SysAluno](https://github.com/Jeffconexion/SysAluno/blob/main/sysaluno.gif)
 
 ![Sistema SysAluno](https://github.com/Jeffconexion/SysAluno/blob/main/sysaluno.gif)
 
