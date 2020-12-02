@@ -8,7 +8,7 @@
 </p>
 
 ### Ementa do Curso ###
-************************
+
 * Entendendo o ASP.NET MVC.
 * Controllers.
 * Trabalhando com Modelos.
@@ -19,7 +19,7 @@
 
 
 ### Projeto ###
-****************
+
 <p> 
 Mediante o conhecimento adquirido, foi desenvolvido o SysAluno. O sistema dispõe de autênticação,
 a persistência dos dados é realizado no SQL Server, podendo adicionar, editar, delhates e deletar aluno.
